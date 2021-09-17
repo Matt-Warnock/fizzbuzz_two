@@ -1,9 +1,9 @@
 def fizzbuzz(num)
-  if num % 3 == 0 && num % 5 == 0
-    "fizzbuzz"
-  elsif num % 3 == 0
+  return "fizzbuzz" if (num % 3).zero? && (num % 5).zero?
+
+  if (num % 3).zero?
     "fizz"
-  elsif num % 5 == 0
+  elsif (num % 5).zero?
     "buzz"
   else
     num
